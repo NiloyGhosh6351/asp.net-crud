@@ -1,0 +1,10 @@
+Select * from tblCrudNetCore;
+
+
+
+Create table dept(id INT,name varchar(100),empid int);
+insert into dept values(1,'fsit',2);
+Drop table dept;
+Select * from dept;
+Select tblCrudNetCore.Name,dept.id,dept.name as deptname from tblCrudNetCore inner join 
+dept on dept.empid=tblCrudNetCore.ID where dept.name='fsit';
